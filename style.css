@@ -220,6 +220,7 @@ p {
     border-radius: 50%;
     border: 10px solid #fff;
     shape-outside: circle(50%);
+    position: relative;
 }
 
 .col2 img {
