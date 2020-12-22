@@ -1,0 +1,241 @@
+html body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Baskervville', serif;
+    color: #010200;
+    background-image: url('bg1.jpg');
+    background-attachment: fixed;
+}
+
+h3 {
+    font-size: 42px;
+}
+
+.break {
+    height: 50px;
+}
+
+.mainTitle {
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: normal!important;
+    font-size: 49px!important;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    font-weight: normal;
+    opacity: 0.95;
+    font-size: 200px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.grunge {
+    background: url('txtgrunge.jpg');
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+}
+
+hr {
+    border: 0;
+    border-bottom: 2px dashed #ccc;
+    background: transparent;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    grid-gap: 0px;
+    grid-auto-rows: minmax(180px, auto);
+    grid-auto-flow: dense;
+    padding: 0px;
+}
+
+.grid-item {
+    padding: 10px;
+    border-radius: 0px;
+}
+
+.grid-item h1 {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 1.7rem;
+    font-weight: lighter!important;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Baskervville', serif;
+}
+
+.dropCap:first-letter {
+    float: left;
+    color: #160600;
+    font-family: 'Rye', cursive;
+    text-shadow: 1px 1px 15px rgba(44, 18, 18, 0.2);
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+.span-2 {
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+}
+
+.span-3 {
+    grid-column-end: span 3;
+    grid-row-end: span 1;
+}
+
+.news {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    padding: 25px;
+    max-width: 940px;
+    margin: 0 auto;
+    height: 1625;
+    box-shadow: 0px 20px 30px 0px #00000090;
+}
+
+.headerInfo {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-style: solid;
+    border: 2px solid black;
+    border-left: 0px;
+    border-right: 0px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.781);
+    color: antiquewhite;
+}
+
+.newsHeader {}
+
+.newsHeader h1 {
+    margin-top: 0px;
+    font-size: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter!important;
+    margin-bottom: 0px;
+    font-family: 'Eczar', serif;
+    background-image: url("plane.png");
+    background-size: 160px;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.newsHeader h2 {
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Abril Fatface', cursive;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.newsBody {}
+
+.newsBodyContainer {
+    border: 2px solid #000000;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.newsBodyContainer img {
+    filter: saturate(20%) sepia(0.7);
+    width: 100%;
+    transition: 0.6s ease-in-out;
+    transition-delay: 0.2s;
+
+}
+.newsBodyContainer img:hover {
+    filter: unset;
+    transition: 0.15s ease-in-out;
+
+}
+.quote {
+    text-align: left!important;
+    font-size: 22px!important;
+}
+
+/* Create two unequal columns that floats next to each other */
+
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+.wrap {
+    margin: auto;
+    overflow: hidden;
+    border-spacing: 10px;
+    position: relative;
+    display: flex;
+}
+
+.col1, .col2 {
+    padding: 10px;
+    text-align: justify;
+    width: calc(50% + 320px);
+}
+
+
+.col1:before, .col2:before {
+    float: right;
+    width: 1px;
+    height: 90px;
+    content: " ";
+}
+
+.col2:before {
+    float: left;
+}
+
+.circleIMG {
+    width: unset!important;
+    float: right;
+    clear: right;
+    margin: 20px 0 20px 20px;
+    border-radius: 50%;
+    border: 10px solid #fff;
+    shape-outside: circle(50%);
+}
+
+.col2 img {
+    float: left;
+    margin: 20px 20px 20px 0;
+    clear: left;
+}
+
+.col1 .inner {
+    margin-right: 220px;
+}
+
+.col2 .inner {
+    margin-left: 220px;
+}
+
+.col2 {
+    margin-left: -440px;
+}
+
