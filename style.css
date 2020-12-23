@@ -108,16 +108,17 @@ p {
 }
 
 .headerInfo {
-    max-width: 400px;
+    max-width: 750px;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
     border-style: solid;
     border: 2px solid black;
     border-left: 0px;
     border-right: 0px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.781);
-    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
 }
 
 .newsHeader {}
