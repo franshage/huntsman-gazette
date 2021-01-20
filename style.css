@@ -97,6 +97,20 @@ p {
     grid-row-end: span 1;
 }
 
+.thriveVideo {
+    height: 100%;
+    width: 100%;
+    background-image: url('vimeo_screenshot.jpg');
+    transition: background 0.3s linear;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.thriveVideo iframe {
+    width: 100%!important;
+    height: 510px;
+}
+
 .news {
     background-image: url('bg.jpg');
     background-size: cover;
@@ -255,16 +269,27 @@ p {
     position: absolute;
     top: 160px
 }
-.shoottext{
-text-align: right;
+
+.shoottext {
+    text-align: right;
 }
+
 /* Use a media query to add a breakpoint at 800px: */
-.circleIMGMobile{
+
+.circleIMGMobile {
     display: none;
 }
-.mobileHamick{
+
+.mobileHamick {
     display: none;
 }
+
+.scrubs {
+    float: left;
+    width: 240px!important;
+    margin-right: 20px;
+}
+
 @media screen and (max-width: 800px) {
     .mainTitle {
         font-size: 24px!important;
@@ -292,48 +317,52 @@ text-align: right;
         position: absolute;
         top: 123px;
     }
-    .shoottext{
+    .shoottext {
         text-align: right;
         font-size: 30px;
         max-width: 190px;
         margin: 0 auto;
         margin-right: 0;
     }
-    .circleIMG{
+    .circleIMG {
         display: none;
     }
-    .headerMobile{
+    .headerMobile {
         font-size: 45px!important;
     }
-    .mobileHamick{
-        width: 70px;
+    .mobileHamick {
+        width: 68px;
+        display: inline-block!important;
     }
-    .hamick{
+    .hamick {
         display: none;
     }
-    .customSmall{
+    .customSmall {
         font-size: 28px!important;
     }
-    .customSmall2{
+    .customSmall2 {
         font-size: 49px!important;
-
     }
-    .wrap{
+    .wrap {
         display: block;
         overflow: unset;
     }
-    .col1{
-        all:unset;
+    .col1 {
+        all: unset;
     }
-    .col2{
-        all:unset;
+    .col2 {
+        all: unset;
     }
-    .inner{
+    .inner {
         margin-right: 0!important;
         margin-left: 0!important;
     }
-    .circleIMGMobile{
+    .circleIMGMobile {
         display: block;
-
+    }
+    .scrubs {
+        max-width: 440px!important;
+        margin-right: 0;
+        float: unset;
     }
 }
