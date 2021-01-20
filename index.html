@@ -14,21 +14,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://player.vimeo.com/api/player.js"></script>
+
 </head>
 <br><br>
 
 <div class="news">
     <div class="row">
-        <div class="column" style="width: 15%;">
+        <div class="column hamick" style="width: 15%;">
             <img src="Mr Hammick_transparent.png" style="
             width: 140px;
             position: block;
             top: 94px;
             z-index: 1;">
         </div>
+
         <div class="column" style="width: 80%; position: relative;">
             <div class="newsHeader" style="z-index: 10; position: relative;">
-                <h1 style="text-align: left!important;"><span
+                <img src="Mr Hammick_transparent.png" class="mobileHamick"
+                    style="width: 70px;top: 94px;z-index: 1;float: left;">
+                <h1 style="text-align: left!important;" class="headerMobile"><span
                         style="font-family: 'Euphoria Script', cursive; text-transform: capitalize; line-height: 0.1; ">The
                     </span><br>Huntsman Gazette</h1>
             </div>
@@ -42,25 +48,41 @@
     <div class="newsBodyContainer">
         <div class="newsBody">
             <p class="dropCap">
-                <img src="exc.png" style="float:left; width: 320px;margin-right: 20px; opacity:0.9">
+                <img src="exc.png" style="float:left; max-width: 310px;margin-right: 20px; opacity:0.9">
                 Welcome back to the Huntsman Gazette, bringing you all of the latest news and developments from 11
                 Savile Row
                 and W57th Street.Whilst many of you have been unable to make your regular visits tous this year, we’re
-                sharing with you all of the new ways it’s easierthan ever to connect with us, and enjoy uninterrupted
+                sharing with you all of the new ways it’s easier than ever to connect with us, and enjoy uninterrupted
                 service.
                 <br>You’ll also discover what our team got upto over lockdown, fromsewing scrubs to support the NHS and
                 working to maintain businessas usual for your bespoke orders! Plus, all of our winners from
-                ourcompetitions
+                our competitions.
             </p>
             <hr>
             <h1 class="mainTitle grunge">Huntsman Tailors Carry On</h1>
-            <div class="grid-layout">
-                <div class="grid-item span-3">
+            <div class="row">
+                <div class="column" style="width: 70%;">
                     <p>
                         <img src="home.png">
                     </p>
                 </div>
-                <div class="grid-item span-2">
+                <div class="column" style="width: 25%;">
+                    <p class="dropCap">
+                        Whilst we had to close our doors at 11 Savile Row and W57th Street to help beat
+                        COVID-19, from
+                        the confines of their homes our Tailors diligently kept working, ensuring that our client’s
+                        orders
+                        were delivered on time. Being both resourceful and ingenious, lounges, bedrooms, and even
+                        terraces
+                        (weather permitting!) were transformed into makeshift workshops and Cutting Theatres, to ensure
+                        that everybody could work safely and comfortably, without compromising on quality!
+                    </p>
+
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="column" style="width: 45%;">
                     <h1 class="grunge">Huntsman Face Masks</h1>
                     <p class="dropCap">
                         <img src="mask.png" style="float:left; width: 140px;margin-right: 20px;">
@@ -79,7 +101,7 @@
 
                 </div>
 
-                <div class="grid-item span-2">
+                <div class="column" style="width: 45%;">
                     <h1 class="grunge">Huntsman Sews Scrubs</h1>
                     <p>
                         <img src="scrubs.png" style="float:left; width: 240px;margin-right: 20px;">
@@ -102,22 +124,11 @@
                         </b>
                     </p>
                 </div>
-                <div class="grid-item">
-                    <p class="dropCap">
-                        Whilst we had to close our doors at 11 Savile Row and W57th Street to help beat
-                        COVID-19, from
-                        the confines of their homes our Tailors diligently kept working, ensuring that our client’s
-                        orders
-                        were delivered on time. Being both resourceful and ingenious, lounges, bedrooms, and even
-                        terraces
-                        (weather permitting!) were transformed into makeshift workshops and Cutting Theatres, to ensure
-                        that everybody could work safely and comfortably, without compromising on quality!
-                    </p>
-
-                </div>
             </div>
+
         </div>
     </div>
+</div>
 </div>
 <div class="break">
 </div>
@@ -164,7 +175,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="column" style="width: 27%;">
+                <div class="column" style="width: 27%; text-align: center;">
                     <img src="edturco.png" style="width: 235px;">
                 </div>
                 <div class="column" style="width: 68%;">
@@ -194,7 +205,7 @@
         <div class="newsBody">
             <div class="row">
                 <div class="column" style="width: 68%;">
-                    <h1 class="mainTitle grunge" style="font-size: 46px!important; text-align: left;">
+                    <h1 class="mainTitle grunge" style=" text-align: left;">
                         The Huntsman Tweed Competition
                     </h1>
                     <hr>
@@ -213,17 +224,20 @@
                         Carey, our finalists were decided, and one clear standout winner.
                     </p>
                 </div>
-                <div class="column" style="width: 27%;">
-                    <video style="transform:rotateZ(-90deg); width: 470px;position: relative; top: 105px; left: -105px;"
-                        autoplay loop muted>
-                        <source src="tweedcomp.mp4" type="video/mp4">
-                    </video>
+                <div class="column" style="width: 27%;; height: 475px">
+                    <div style="transform:rotateZ(-90deg); width: 470px;position: relative; top: 105px; left: -105px;">
+                        <div style="padding:56.25% 0 0 0;position:relative;"></div><iframe
+                            src="https://player.vimeo.com/video/502461424?autoplay=1&loop=1&title=0&byline=0&portrait=0"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+
                 </div>
             </div>
             <br>
             <div class="row">
                 <div class="column" style="width: 27%;">
-                    <img src="tweedwinner.png" style="width: 235px;">
+                    <img src="tweedwinner.png" style="max-width: 335px;">
 
                 </div>
                 <div class="column" style="width: 68%;">
@@ -257,13 +271,14 @@
         <h2>
             Up Next
         </h2>
-        <h1 class="mainTitle grunge" style="text-align: left; font-size: 64px!important;">
+        <h1 class="mainTitle grunge bigMobileTitle" style="text-align: left; ">
             Huntsman Shooting & Sport
         </h1>
-        <video style=" width: 100%;" autoplay loop muted>
-            <source src="shootingvid.mp4" type="video/mp4">
-        </video>
-        <img src="readmore.png" style="    width: 475px;
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+                src="https://player.vimeo.com/video/502461362?autoplay=1&loop=1&title=0&byline=0&portrait=0"
+                style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+        <img src="readmore.png" style="max-width: 475px;
                     position: relative;
                     left: -20px;
                     top: 15px;">
@@ -290,30 +305,31 @@
                 and will now enjoy future shooting
                 parties in a new bespoke Huntsman jacket, as the winner of the quiz.</p>
             <div class="row">
-                <div class="column" style="width: 38%; padding-left: 0;">
+                <div class="column" style="width: 38%;">
                     <img src="shootquiz.jpg">
                 </div>
                 <div class="column" style="width: 57%; position: relative;">
-                    <h1 style="text-align: right;">
+                    <h1 class="shoottext">
                         Download the quiz with full correct answers to share with friends and family.
                     </h1>
-                    <img src="shootingman.png" style="
-                   width: 360px;
-position: absolute;
-top: 160px">
+                    <img src="shootingman.png" class="shootingman">
                 </div>
             </div>
             <hr><br>
-            <h1 class="mainTitle"
-                style="font-size: 63px!important; text-align: center; background-image: url('highlight.png'); background-size: cover;color: rgb(255, 246, 235); margin-top: 0px;">
+            <h1 class="mainTitle bigMobileTitle"
+                style=" text-align: center; background-image: url('highlight.png'); background-size: cover;color: rgb(255, 246, 235); margin-top: 0px;">
                 Huntsman x Harrisons
             </h1>
             <h1 style="text-align: center;">
                 An exclusive cloth curation for every occasion
             </h1>
             <div class="row">
-                <div class="column" style="width: 52%; padding-left: 0;">
-                    <img src="harrisons.jpg" style="width: 100%;">s
+                <div class="column" style="width: 52%;">
+                    <div style="padding:100% 0 0 0;position:relative;"><iframe
+                            src="https://player.vimeo.com/video/502459289?autoplay=1&loop=1&title=0&byline=0&portrait=0"
+                            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+
                 </div>
                 <div class="column" style="width: 42%;">
                     <p>
@@ -328,6 +344,7 @@ top: 160px">
                         bespoke commissions in 2021 as well as watching the full interview with Campbell, Dario and
                         Mark.
                     </p>
+
                 </div>
             </div>
         </div>
@@ -338,8 +355,8 @@ top: 160px">
 <div class="news">
     <div class="newsBodyContainer">
         <div class="newsBody">
-            <h1 class="mainTitle"
-                style="font-size: 63px!important; text-align: center; background-image: url('highlight.png'); background-size: cover;color: rgb(255, 246, 235); margin-top: 0px;">
+            <h1 class="mainTitle bigMobileTitle"
+                style=" text-align: center; background-image: url('highlight.png'); background-size: cover;color: rgb(255, 246, 235); margin-top: 0px;">
                 Ron Arad x Huntsman x Morgan
             </h1>
             <h1 style="text-align: center; margin-bottom: 0;">Morgan Undercover: The Art Of Bespoke in 11 Savile Row
@@ -363,6 +380,8 @@ top: 160px">
                         </p>
                     </div>
                 </div>
+                <img class="circleIMGMobile" src="cutter.png" alt="Centred Image">
+
                 <div class="col2">
                     <img class="circleIMG" src="cutter.png" width="400" height="400" alt="Centred Image">
                     <div class="inner">
@@ -495,7 +514,10 @@ top: 160px">
                 </div>
             </div>
             <h1 style="font-size: 50px;">Up next: Teleporting Bespoke Services</h1>
-            <img src="bespokeTP.jpg" style="width: 100%;">
+            <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+                    src="https://player.vimeo.com/video/465711226?autoplay=1&loop=1&title=0&byline=0&portrait=0"
+                    style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                    allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
 
         </div>
     </div>
@@ -506,7 +528,7 @@ top: 160px">
     <div class="newsBodyContainer">
         <div class="newsBody">
             <h1 class="mainTitle"
-                style="font-size: 63px!important; text-align: center; background-image: url('highlight.png'); background-size: cover;color: rgb(255, 246, 235); margin-top: 0px;">
+                style=" text-align: center; background-image: url('highlight.png'); background-size: cover;color: rgb(255, 246, 235); margin-top: 0px;">
                 THE FUTURE OF BESPOKE TAILORING
             </h1>
             <p>
@@ -552,10 +574,10 @@ top: 160px">
             </div>
             <div class="row">
                 <div class="column" style="width:70%; padding-left: 0; position: relative;">
-                    <h1 class="mainTitle grunge"
-                        style="text-align: center; margin-top: 0px; font-size: 48px!important;">Huntsman
-                        Home:<br><br><span style="font-size: 100px; line-height: 22px;">Bespoke <br><span
-                                style="font-size: 82.5px;">Interiors</span> </h1>
+                    <h1 class="mainTitle grunge customSmall"
+                        style="text-align: center; margin-top: 0px; font-size: 48px">Huntsman
+                        Home:<br><br><span class="customSmall2" style="font-size: 100px; line-height: 22px;">Bespoke
+                            <br><span style="font-size: 82.5px;" class="customSmall2">Interiors</span> </h1>
                 </div>
                 <div class="column" style="width: 26%;">
                     <img src="home.jpg" style="width: 100%;">
@@ -577,6 +599,62 @@ top: 160px">
                 create for you?
             </p>
             <img src="sofa.jpg">
+        </div>
+    </div>
+</div>
+<div class="news">
+    <div class="newsBodyContainer">
+        <div class="newsBody">
+            <h1 class="mainTitle"
+                style=" text-align: center; background-image: url('highlight.png'); background-size: cover;color: rgb(255, 246, 235); margin-top: 0px;">
+                Get Dressed For Spring
+            </h1>
+            <h2 style="text-align: center;">Prepare for Life After Lockdown</h2>
+            <p class="dropCap">
+                Join Huntsman in our New Year’s Resolution And Get Dressed For Spring. Prepare for life after lockdown
+                and start planning your wardrobe.
+
+            </p>
+            <p>
+                2021 marks the start of a New Year, and though many of us continue to navigate life under lockdown, we
+                offer a sartorial resolution, one designed to shake off the sweatpants of 2020, and Huntsman is here to
+                help you keep it:
+
+            </p>
+            <h1 class="mainTitle fancy-border">We Will Get Dressed For Spring</h1>
+            <p class="dropCap">
+
+                Invest in a wardrobe that works, so that whether you’re looking to dazzle on your Zoom interview, or
+                want to cut a dash when you’re finally back in the boardroom, you feel re-energized, and reinvigorated
+                with garments you’ll love both in and out of confinement, with seasonal collections available to shop
+                online and even more choice with our Made To Order service.
+
+            </p>
+            <p>
+                The promise of a vaccine means that many of us will, at last, begin to consider life after confinement.
+                Perhaps you’re planning a wedding, thinking about throwing a party, or perhaps you’re eager to get back
+                in the swing of the season, Ascot is just around the corner!
+
+            </p>
+            <p>
+                How do you want to look for life after lockdown? If it’s shopping our Ready To Wear, customising your
+                wardrobe with Made To Order or getting your new bespoke appointments ready now, Huntsman is here to
+                help. It’s never been easier to connect with us live from the comfort of your own home.
+
+            </p>
+            <p>
+                For clients in London you can enjoy premier concierge service from our delivery partners at TOSHI.
+                Experience personal shopping in the comfort of your home, with our ‘Wait & Try’ option. Your TOSHI
+                assistant will deliver your garments and wait whilst you try, decide what you love and what you want to
+                return.
+
+            </p>
+            <a href="https://www.huntsmansavilerow.com/ready-to-wear/" style="all:unset">
+                <h1 class="mainTitle"
+                    style=" text-align: center; background-image: url('highlight.png'); background-size: cover;color: rgb(255, 246, 235); margin-top: 0px; max-width: 340px; margin: 0 auto">
+                    SHOP NOW
+                </h1>
+            </a>
         </div>
     </div>
 </div>
