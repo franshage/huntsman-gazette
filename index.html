@@ -225,7 +225,7 @@
         <div class="newsBodyContainer">
             <div class="newsBody">
                 <div class="row">
-                    <div class="column" style="width: 68%;">
+                    <div class="column" style="width: 53%;">
                         <h1 class="mainTitle grunge" style=" text-align: left;">
                             The Huntsman Tweed Competition
                         </h1>
@@ -245,9 +245,9 @@
                             Carey, our finalists were decided, and one clear standout winner.
                         </p>
                     </div>
-                    <div class="column" style="width: 27%;; height: 475px">
-                        <div
-                            style="transform:rotateZ(-90deg); width: 470px;position: relative; top: 105px; left: -105px;">
+                    <div class="column" style="width: 42%; height: 475px">
+                        <div class='embed-container' style="padding-bottom: 112%;">
+
                             <div id="vidDemo1" class="thriveVideo1"></div>
 
                         </div>
@@ -295,8 +295,9 @@
             <h1 class="mainTitle grunge bigMobileTitle" style="text-align: left; ">
                 Huntsman Shooting & Sport
             </h1>
-            <div id="vidDemo2" class="thriveVideo2"></div>
-
+            <div class='embed-container'>
+                <div id="vidDemo2" class="thriveVideo2"></div>
+            </div>
             <img src="readmore.png" style="max-width: 475px;
                     position: relative;
                     left: -20px;
@@ -344,9 +345,10 @@
                     An exclusive cloth curation for every occasion
                 </h1>
                 <div class="row">
-                    <div class="column" style="width: 52%;">
-                        <div id="vidDemo3" class="thriveVideo3"></div>
-
+                    <div class="column" style="width: 52%; height: 400px">
+                        <div class='embed-container' style="padding-bottom: 86%;">
+                            <div id="vidDemo3" class="thriveVideo3"></div>
+                        </div>
 
                     </div>
                     <div class="column" style="width: 42%;">
@@ -543,7 +545,7 @@
                     </div>
                 </div>
                 <h1 style="font-size: 50px;">Up next: Teleporting Bespoke Services</h1>
-                <div>
+                <div class='embed-container'>
                     <div id="vidDemo4" class="thriveVideo4"></div>
                 </div>
 
@@ -654,7 +656,18 @@
                     help you keep it:
 
                 </p>
-                <h1 class="mainTitle fancy-border">We Will Get Dressed For Spring</h1>
+                <div class="row">
+
+                    <div class="column" style="width: 47%; padding-top: 20px;">
+                        <div class='embed-container'>
+                            <div id="vidDemo5" class="thriveVideo5"></div>
+                        </div>
+                    </div>
+                    <div class="column" style="width: 48%;">
+                        <h1 class="mainTitle fancy-border" style="margin-top: 0px;">We Will Get Dressed For Spring</h1>
+                    </div>
+                </div>
+
                 <p class="dropCap">
 
                     Invest in a wardrobe that works, so that whether you’re looking to dazzle on your Zoom interview, or
@@ -732,10 +745,10 @@
     <script>
 
         $(document).ready(function () {
-            thrivePlayer1 = thriveLoadVideo('vidDemo1', 502461424);
+            thrivePlayer1 = thriveLoadVideo('vidDemo1', 502926956);
             $(window).scroll(function () { thrivePlayPause('vidDemo1', thrivePlayer1); });
 
-            thrivePlayer2 = thriveLoadVideo('vidDemo2', 502461362);
+            thrivePlayer2 = thriveLoadVideo('vidDemo2', 502929988);
             $(window).scroll(function () { thrivePlayPause('vidDemo2', thrivePlayer2); });
 
             thrivePlayer3 = thriveLoadVideo('vidDemo3', 502459289);
@@ -743,6 +756,9 @@
 
             thrivePlayer4 = thriveLoadVideo('vidDemo4', 465711226);
             $(window).scroll(function () { thrivePlayPause('vidDemo4', thrivePlayer4); });
+
+            thrivePlayer4 = thriveLoadVideo('vidDemo5', 502929955);
+            $(window).scroll(function () { thrivePlayPause('vidDemo5', thrivePlayer4); });
 
             $('#btnPause').bind('click', function () {
                 console.log('pause');
