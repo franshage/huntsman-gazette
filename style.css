@@ -14,7 +14,14 @@ h3 {
 .break {
     height: 50px;
 }
+a {
+    color: #A90200;
+    font-style: italic;
+    text-decoration: none;
+}
 
+a:hover{
+text-decoration: underline;}
 .mainTitle {
     font-family: 'Alfa Slab One', cursive;
     font-weight: normal!important;
@@ -261,7 +268,7 @@ p {
 }
 
 .bigMobileTitle {
-    font-size: 62px!important;
+    font-size: 60px!important;
 }
 
 .shootingman {
